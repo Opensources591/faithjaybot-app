@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>FaithJayBot</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="app-container">
+    <header class="header">
+      <img src="logo.png" class="logo" alt="FaithJayBot Logo"/>
+      <h1>FaithJayBot</h1>
+      <button id="toggleTheme">🌓</button>
+    </header>
+
+    <main id="main-content">
+      <div class="login-box" id="login-box">
+        <h2>Welcome to FaithJayBot</h2>
+        <input type="email" id="email" placeholder="Email" required />
+        <input type="password" id="password" placeholder="Password" required />
+        <button onclick="login()">Login to Continue</button>
+        <p class="small">Built with ❤️ by Omokaro J Faith — Revelation 14 Family</p>
+      </div>
+
+      <div class="chat-box" id="chat-box" style="display: none;">
+        <h2 id="greeting"></h2>
+        <div id="messages"></div>
+        <textarea id="userInput" placeholder="Ask FaithJayBot anything..."></textarea>
+        <button onclick="sendMessage()">Send</button>
+        <button onclick="logout()">Logout</button>
+      </div>
+    </main>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
